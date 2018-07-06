@@ -1,0 +1,24 @@
+[global_config]
+  suppress_multiple_term_dialog = True
+  title_transmit_bg_color = "#38944f"
+[keybindings]
+  close_term = <Primary><Shift>w
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_image = None
+    custom_command = TERM=xterm-256color bash -l
+    font = Monospace 9
+    foreground_color = "#ffffff"
+    scroll_on_output = False
+    scrollback_infinite = True
+    use_custom_command = True
+    use_system_font = False
